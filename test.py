@@ -17,7 +17,7 @@ type = input("What type(s) would you like?")
 for index, item in enumerate(data):
     if type == "fire":
         print(f"{index}: {item["name"]["fire"]}")
-"""  elif type == "water":
+    elif type == "water":
         print(f"{index}: {item["name"]["type"]["water"]}")
     elif type == "grass":
         print(f"{index}: {item["name"]["type"]["grass"]}")
@@ -25,4 +25,3 @@ for index, item in enumerate(data):
         print(f"{index}: {item["name"]["type"]["flying"]}")
     elif type == "rock":
         print(f"{index}: {item["name"]["type"]["rock"]}")   
-     """
