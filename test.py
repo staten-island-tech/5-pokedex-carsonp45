@@ -22,6 +22,9 @@ for index, item in enumerate(data):
     if pokemon in (f"{index}: {item["name"]["english"]}"):
         print(f"{index}: {item["name"]["english"]}")
         print(f"{index}: {item["type"]}")
+        pokemove = item["type"]
 for index, item in enumerate(data_2):
-    if pokemon in item["type"]:
-        print(f"{index}: {item["ename"]}")
+    for move in data_2:
+        if move["type"] in pokemove:
+            print(f"{move["ename"]} ({move["type"]})")
+    break
